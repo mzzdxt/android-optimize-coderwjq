@@ -83,11 +83,13 @@ public class MainActivity extends AppCompatActivity {
         // 边界压缩后，还需要将图片加载到内存，生成bitmap
         options.inJustDecodeBounds = false;
 
+        // 进行色彩压缩
+//        options.inPreferredConfig = Bitmap.Config.RGB_565;
+
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.test, options);
 
         mIvImage.setImageBitmap(bitmap);
 
-        bitmap.recycle();
     }
 
     /**
