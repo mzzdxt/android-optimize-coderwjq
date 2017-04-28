@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.jakewharton.rxbinding2.view.RxView;
 import com.jakewharton.rxbinding2.widget.RxTextView;
 import com.litesuits.common.assist.Toastor;
 
@@ -15,6 +16,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Predicate;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     private EditText mEtSubmit;
     private Toastor mToastor;
     private Button mBtnCommit;
@@ -30,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
         mBtnCommit = (Button) findViewById(R.id.btn_commit);
 
         setEditTextBinding();
+        setButtonCommitBinding();
+    }
+
+    private void setButtonCommitBinding() {
+        RxView.clicks(mBtnCommit)
+                // 避免按钮在短时间内的重复点击
+                .throttleFirst(1000, TimeUnit.MILLISECONDS)
+                .subscribe(new Consumer<Object>() {
+                    @Override
+                    public void accept(Object o) throws Exception {
+                        mToastor.showSingletonToast("click:" + mEtSubmit.getText().toString() + System.currentTimeMillis());
+                    }
+                });
     }
 
     private void setEditTextBinding() {
