@@ -11,8 +11,12 @@ import com.litesuits.common.assist.Toastor;
 
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Observable;
+import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,6 +47,42 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void accept(Object o) throws Exception {
                         mToastor.showSingletonToast("click:" + mEtSubmit.getText().toString() + System.currentTimeMillis());
+                        // 开始倒计时处理
+                        startCountTime(10);
+                    }
+                });
+    }
+
+    private void startCountTime(final int time) {
+        Observable.interval(0, 1, TimeUnit.SECONDS)
+                .take(time + 1)
+                .map(new Function<Long, Long>() {
+                    @Override
+                    public Long apply(Long aLong) throws Exception {
+                        return time - aLong;
+                    }
+                })
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<Long>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        mBtnCommit.setEnabled(false);
+                    }
+
+                    @Override
+                    public void onNext(Long value) {
+                        mBtnCommit.setText("请在" + value + "秒后重试");
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        e.printStackTrace();
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        mBtnCommit.setText("提交查询");
+                        mBtnCommit.setEnabled(true);
                     }
                 });
     }
