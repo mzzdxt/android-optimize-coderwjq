@@ -40,9 +40,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setButtonCommitBinding() {
+
         RxView.clicks(mBtnCommit)
                 // 避免按钮在短时间内的重复点击
                 .throttleFirst(1000, TimeUnit.MILLISECONDS)
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<Object>() {
                     @Override
                     public void accept(Object o) throws Exception {
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                         return time - aLong;
                     }
                 })
+                // subscribe的线程指定为new thread
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<Long>() {
                     @Override

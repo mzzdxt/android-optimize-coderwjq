@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         // 加载图片时不会将整张图片加载到内存，只会读取图片的大小信息并存放在options中
         options.inJustDecodeBounds = true;
 
+        // 只读取边界信息，此时返回的bitmap为null
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.test, options);
 
         // 获取图片的原始尺寸大小

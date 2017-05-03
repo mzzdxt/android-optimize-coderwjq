@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="fingerprintidentify-1.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b36b1d2ffe21006e041b1fbd28da4694d54bf10a/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b36b1d2ffe21006e041b1fbd28da4694d54bf10a/output/jars/libs/MeiZu_Fingerprint.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b36b1d2ffe21006e041b1fbd28da4694d54bf10a/output/jars/libs/Samsung_Fingerprint_Pass-v1.2.2.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b36b1d2ffe21006e041b1fbd28da4694d54bf10a/output/jars/libs/Samsung_Fingerprint_Sdk-v1.0.0.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b36b1d2ffe21006e041b1fbd28da4694d54bf10a/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wei.android.lib/fingerprintidentify/1.1.2/7c828fa8cdd9491a87ab9bb5c1fded39b489691a/fingerprintidentify-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

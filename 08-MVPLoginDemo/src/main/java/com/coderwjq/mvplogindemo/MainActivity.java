@@ -197,6 +197,7 @@ public class MainActivity extends AppCompatActivity implements LoginView {
     @Override
     protected void onPause() {
         super.onPause();
-        mFingerprintIdentify.cancelIdentify();
+
+//        mFingerprintIdentify.cancelIdentify();
     }
 }
