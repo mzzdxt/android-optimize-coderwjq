@@ -1,1 +1,1 @@
-include ':01-DecodeBoundsOptimize', ':02-LruCacheDemo', ':03-AndroidAIDLDemo', ':04-TestAIDLDemo', ':05-RxJavaDemo', ':06-Dagger2Demo', ':07-AndroidHotFix', ':08-MVPLoginDemo'
+include ':01-DecodeBoundsOptimize', ':02-LruCacheDemo', ':03-AndroidAIDLDemo', ':04-TestAIDLDemo', ':05-RxJavaDemo', ':06-Dagger2Demo', ':07-AndroidHotFix', ':08-MVPLoginDemo', ':09-ExpressDemo', ':10-GaodeMap'
