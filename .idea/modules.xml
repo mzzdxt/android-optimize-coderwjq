@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-DecodeBoundsOptimize/01-DecodeBoundsOptimize.iml" filepath="$PROJECT_DIR$/01-DecodeBoundsOptimize/01-DecodeBoundsOptimize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-LruCacheDemo/02-LruCacheDemo.iml" filepath="$PROJECT_DIR$/02-LruCacheDemo/02-LruCacheDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-AndroidAIDLDemo/03-AndroidAIDLDemo.iml" filepath="$PROJECT_DIR$/03-AndroidAIDLDemo/03-AndroidAIDLDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-TestAIDLDemo/04-TestAIDLDemo.iml" filepath="$PROJECT_DIR$/04-TestAIDLDemo/04-TestAIDLDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-RxJavaDemo/05-RxJavaDemo.iml" filepath="$PROJECT_DIR$/05-RxJavaDemo/05-RxJavaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-Dagger2Demo/06-Dagger2Demo.iml" filepath="$PROJECT_DIR$/06-Dagger2Demo/06-Dagger2Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-AndroidHotFix/07-AndroidHotFix.iml" filepath="$PROJECT_DIR$/07-AndroidHotFix/07-AndroidHotFix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-MVPLoginDemo/08-MVPLoginDemo.iml" filepath="$PROJECT_DIR$/08-MVPLoginDemo/08-MVPLoginDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-ExpressDemo/09-ExpressDemo.iml" filepath="$PROJECT_DIR$/09-ExpressDemo/09-ExpressDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10-GaodeMap/10-GaodeMap.iml" filepath="$PROJECT_DIR$/10-GaodeMap/10-GaodeMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11-RxJavaAppList/11-RxJavaAppList.iml" filepath="$PROJECT_DIR$/11-RxJavaAppList/11-RxJavaAppList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-optimize-coderwjq.iml" filepath="$PROJECT_DIR$/android-optimize-coderwjq.iml" />
+    </modules>
+  </component>
+</project>

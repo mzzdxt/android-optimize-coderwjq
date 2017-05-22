@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.e(TAG, "onCreate: " + TransUtils.trans(987654321 + "")); // 1,234,567
+
         mMapView = (MapView) findViewById(R.id.map_view);
         mMapView.onCreate(savedInstanceState);
 
